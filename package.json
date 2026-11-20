@@ -1,0 +1,12 @@
+{
+  "name": "nonprofit-event-receipts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/nonprofit_webhook.ts",
+    "test": "node --experimental-strip-types --test src/nonprofit_webhook.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.23.0" },
+  "devDependencies": { "typescript": "^5.7.0", "@types/node": "^22.0.0" }
+}
